@@ -1,129 +1,113 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Thank You</title>
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      text-align: center;
-    }
-
-    .menu {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .menu li {
-      display: inline-block;
-      margin-right: 30px;
-    }
-
-    .menu li a {
-      text-decoration: none;
-      font-weight: bold;
-      text-decoration: underline;
-      color: black;
-    }
-
-    .hero {
-      background-color: #f2f2f2;
-      padding: 50px;
-      text-align: center;
-    }
-
-    .hero-header {
-      font-family: 'Roboto', sans-serif;
-      font-size: 60px;
-      color: black;
-    }
-
-    .hero-description {
-      font-size: 20px;
-    }
-
-    .sign-up-button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      font-size: 30px;
-      color: white;
-      background-color: black;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-
-    .features {
-      display: flex;
-      justify-content: space-around;
-      padding: 50px;
-    }
-
-    .feature-image img {
-      width: 400px;
-      height: auto;
-    }
-
-    .feature-description {
-      width: 50%;
-    }
-
-    .feature-description h2 {
-      font-size: 20px;
-      font-weight: bold;
-      color: black;
-    }
-
-    .feature-description p {
-      font-size: 14px;
-      color: black;
-    }
-  </style>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Tiny Beens Academy</title>
+    <style>
+        body {
+            background-color: skyblue;
+            margin: 0;
+            padding: 0;
+            font-family: Roboto, sans-serif;
+        }
+        
+        .menu {
+            background-color: gold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+        }
+        
+        .menu a {
+            text-decoration: underline;
+            color: black;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        .hero h1 {
+            font-size: 60px;
+            color: black;
+            margin: 0;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            color: black;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 30px;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+        
+        .feature-block {
+            display: flex;
+            padding: 80px 0;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        .feature-block img {
+            width: 400px;
+            height: auto;
+        }
+        
+        .feature-block p {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .feature-block .description {
+            font-size: 14px;
+            color: black;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <nav class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Courses</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Contact</a>
     </nav>
-  </header>
-
-  <section class="hero">
-    <h1 class="hero-header">
-      WELCOME<br>
-      TO<br>
-      TINY BEENS ACADEMY.
-    </h1>
-    <p class="hero-description">Learning web development as a team!</p>
-    <a href="#" class="sign-up-button">SIGN UP</a>
-  </section>
-
-  <section class="features">
-    <div class="feature-image">
-      <img src="https://149520306.v2.pressablecdn.com/wp-content/uploads/2019/10/Nigerian-children-to-learn-coding.jpg" alt="Children learning coding">
-    </div>
-    <div class="feature-description">
-      <h2>Why Learn How To Code?</h2>
-      <p>Considering the direction that the world is going with developments in technology, we strongly believe that it is critical for people to get exposed to skills that will prepare them for the 4th industrial revolution.</p>
-    </div>
-  </section>
-
-  <footer>
-    <!-- Footer content here -->
-  </footer>
+    
+    <section class="hero">
+        <h1>WELCOME<br>TO<br>TINY BEENS ACADEMY</h1>
+        <p>Learning web development as a team!</p>
+        <a href="#" class="cta-button">SIGN UP</a>
+    </section>
+    
+    <section class="feature-block">
+        <div>
+            <img src="https://149520306.v2.pressablecdn.com/wp-content/uploads/2019/10/Nigerian-children-to-learn-coding.jpg" alt="Coding Kids">
+        </div>
+        <div>
+            <p>Why Learn How To Code?</p>
+            <p>Considering the direction that the world is going with developments in technology, we strongly believe that it is critical for people to get exposed to skills that will prepare them for the 4th industrial revolution.</p>
+            <p>Learn How To Think Differently</p>
+            <p>Computer programming doesn't just teach people how to type lines of code. It teaches them how to think differently and solve problems.</p>
+        </div>
+    </section>
 </body>
 </html>
+
 
 
 

@@ -1,26 +1,130 @@
-<h1> I am Pargo </h1>
-
-
-</style>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thank You</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1 style="color: black;">Pargo Academy</h1>
-    <p style="font-size: 14px; font-weight: bold; text-align: center;">.</p>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav>
-    <ul style="text-align: center;">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Courses</a></li>
-      <li><a href="#">Testimonials</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-  <h2 style="font-family: Roboto; font-size: 26px; font-weight: bold; text-align: center;">Why Learn How To Code?</h2>
-  <p style="font-family: Roboto; font-size: 14px; text-align: center;">Considering the direction that the world is going with developments in technology we strongly believe that it is critical for people to get exposed to skills that will prepare them for the 4th industrial revolution.</p>
+
+  <section class="hero">
+    <h1 class="hero-header">
+      WELCOME<br>
+      TO<br>
+      TINY BEENS ACADEMY.
+    </h1>
+    <p class="hero-description">Learning web development as a team!</p>
+    <a href="#" class="sign-up-button">SIGN UP</a>
+  </section>
+
+  <section class="features">
+    <div class="feature-image">
+      <img src="https://149520306.v2.pressablecdn.com/wp-content/uploads/2019/10/Nigerian-children-to-learn-coding.jpg" alt="Children learning coding">
+    </div>
+    <div class="feature-description">
+      <h2>Why Learn How To Code?</h2>
+      <p>Considering the direction that the world is going with developments in technology, we strongly believe that it is critical for people to get exposed to skills that will prepare them for the 4th industrial revolution.</p>
+    </div>
+  </section>
+
+  <footer>
+    <!-- Footer content here -->
+  </footer>
 </body>
 </html>
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+
+.hero {
+  background-color: #f2f2f2;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero-header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+  color: black;
+}
+
+.hero-description {
+  font-size: 20px;
+}
+
+.sign-up-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.feature-image img {
+  width: 400px;
+  height: auto;
+}
+
+.feature-description {
+  width: 50%;
+}
+
+.feature-description h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.feature-description p {
+  font-size: 14px;
+  color: black;
+}
+
 
 
 

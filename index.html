@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Coding Academy Landing Page</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
         }
-        
+
         .menu {
+            background-color: #FDD017;
+            height: 60px;
             display: flex;
             justify-content: center;
-            background-color: #b8860b;
-            padding: 30px 0;
+            align-items: center;
         }
-        
+
         .menu a {
+            color: black;
             font-size: 23px;
             font-weight: bold;
-            color: #000000;
             text-decoration: none;
+            margin: 0 15px;
             font-family: Monospace;
-            margin: 0 30px;
         }
-        
+
         .hero {
             background-image: url('https://images.unsplash.com/photo-1555421689-491a97ff2040?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
             background-position: center;
@@ -33,47 +33,54 @@
             padding: 100px 0;
             color: black;
         }
-        
+
         .hero h1 {
             font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 20px;
             font-family: Monospace;
         }
-        
+
         .hero h2 {
             font-size: 40px;
             font-family: Monospace;
-            margin: 20px 0;
         }
-        
-        .hero p {
-            font-size: 20px;
+
+        .description {
+            font-size: 14px;
+            margin-bottom: 30px;
             font-family: Monospace;
         }
-        
+
         .cta-button {
             display: inline-block;
             font-size: 30px;
-            font-family: Monospace;
             background-color: black;
             color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 10px 30px;
+            border-radius: 65px;
             text-decoration: none;
+            font-family: Monospace;
         }
-        
+
         .features {
-            background-image: url('https://images.unsplash.com/photo-1617802690658-1173a812650d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
-            background-position: center;
-            background-size: cover;
+            display: flex;
+            align-items: center;
             padding: 100px 0;
             color: black;
         }
-        
+
         .features img {
             width: 50%;
             border-radius: 10px;
         }
-        
+
+        .features-content {
+            width: 50%;
+            padding-left: 50px;
+            color: black;
+        }
+
         .features-title {
             font-size: 20px;
             font-weight: bold;
@@ -81,22 +88,22 @@
             color: black;
             font-family: Monospace;
         }
-        
+
         .features-text {
             font-size: 14px;
             color: black;
             font-family: Monospace;
         }
-        
+
         .video {
-            background-image: url('https://images.unsplash.com/photo-1526649661456-89c7ed4d00b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2620&q=80');
+            background-image: url('https://images.unsplash.com/photo-1617802690658-1173a812650d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
             background-position: center;
             background-size: cover;
-            padding: 100px 0;
-            color: white;
             text-align: center;
+            padding: 100px 0;
+            color: black;
         }
-        
+
         .video-title {
             font-size: 20px;
             font-weight: bold;
@@ -104,24 +111,32 @@
             color: black;
             font-family: Monospace;
         }
-        
+
         .video-text {
             font-size: 14px;
             color: black;
             font-family: Monospace;
         }
-        
+
         .cohort {
-            background-color: white;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 100px 0;
+            color: black;
         }
-        
+
         .cohort img {
             width: 50%;
             border-radius: 10px;
         }
-        
+
+        .cohort-content {
+            width: 50%;
+            padding-left: 50px;
+            color: black;
+        }
+
         .cohort-title {
             font-size: 20px;
             font-weight: bold;
@@ -129,18 +144,11 @@
             color: black;
             font-family: Monospace;
         }
-        
+
         .cohort-list {
-            list-style-type: none;
-            padding: 0;
             font-size: 14px;
             color: black;
             font-family: Monospace;
-            text-align: center;
-        }
-        
-        .cohort-list li {
-            margin: 10px 0;
         }
     </style>
 </head>
@@ -159,59 +167,55 @@
         <h1>WELCOME</h1>
         <h2>TO</h2>
         <h1>PARGO ACADEMY</h1>
-        <p>Learning web development as a team.</p>
+        <p class="description">Learning web development as a team.</p>
         <a class="cta-button" href="https://form.jotform.com/211353850485557">ENROL TODAY</a>
     </div>
 
     <div class="features">
-        <div class="container">
-            <img src="https://149520306.v2.pressablecdn.com/wp-content/uploads/2019/10/Nigerian-children-to-learn-coding.jpg" alt="Coding Image">
-            <div class="features-content">
-                <div class="features-title">Why Learn How To Code?</div>
-                <p class="features-text">Considering the direction that the world is going with developments in technology, we strongly believe that it is critical for people to get exposed to skills that will prepare them for the 4th industrial revolution.</p>
-                <div class="features-title">Learn How To Think Differently</div>
-                <p class="features-text">Computer programming doesn't just teach people how to type lines of code. It teaches them how to think differently and solve problems.</p>
-                <div class="features-title">Coding Is The Future</div>
-                <p class="features-text">Coding is a useful skill to have with the way the world is developing.</p>
-                <div class="features-title">Learn Whilst Having Fun</div>
-                <p class="features-text">Learning how to code is both educational and enjoyable. It is the best gift for you or your child!</p>
-            </div>
+        <img src="https://149520306.v2.pressablecdn.com/wp-content/uploads/2019/10/Nigerian-children-to-learn-coding.jpg" alt="Coding Kids">
+        <div class="features-content">
+            <div class="features-title">Why Learn How To Code?</div>
+            <p class="features-text">Considering the direction that the world is going with developments in technology, we strongly believe that it is critical for people to get exposed to skills that will prepare them for the 4th industrial revolution.</p>
+            <div class="features-title">Learn How To Think Differently</div>
+            <p class="features-text">Computer programming doesn't just teach people how to type lines of code. It teaches them how to think differently and solve problems.</p>
+            <div class="features-title">Coding Is The Future</div>
+            <p class="features-text">Coding is a useful skill to have with the way the world is developing.</p>
+            <div class="features-title">Learn Whilst Having Fun</div>
+            <p class="features-text">Learning how to code is both educational and enjoyable. It is the best gift for you or your child!</p>
         </div>
     </div>
 
     <div class="video">
         <h2 class="video-title">HTML Tutorial for Beginners: HTML Crash Course</h2>
-        <p class="video-text">HTML Tutorial for Beginners - Learn HTML for a career in web development. This HTML tutorial teaches you everything you need to get started. 🔥 Enrol With Pargo Academy Today and Become an HTML and CSS Master! 🔥</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/5WJpSAWtI_4" frameborder="0" allowfullscreen></iframe>
+        <p class="video-text">HTML Tutorial for Beginners - Learn HTML for a career in web development. This HTML tutorial teaches you everything you need to get started.
+🔥 Enrol With Pargo Academy Today and Become an HTML and CSS Master! 🔥</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5WJpSAWtI_4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
     <div class="cohort">
-        <div class="container">
-            <img src="https://media.licdn.com/dms/image/C4D22AQG0no32-jIrLg/feedshare-shrink_2048_1536/0/1679002072948?e=1689206400&v=beta&t=6G2tF-GyGmwqgEOW6FzVwwkT6Bzv8nMFfnBPOtCyik8" alt="Cohort Image">
-            <div class="cohort-content">
-                <div class="cohort-title">First Cohort</div>
-                <ol class="cohort-list">
-                    <li>Adham the Barrier Breaker</li>
-                    <li>The Driven Thuthu</li>
-                    <li>ET1 The Relationship Builder</li>
-                    <li>Nzeka The Go-Getter</li>
-                    <li>Omphile's Daddy</li>
-                    <li>Nabeelah The Collaborator</li>
-                    <li>Mikhaila The Memory Maker</li>
-                    <li>Niel The Bit Flipper</li>
-                    <li>Seb The Data Diva</li>
-                    <li>Paul The Optimizer</li>
-                    <li>Elrika The Talent Magnet</li>
-                    <li>Shaunei The Puma</li>
-                    <li>Kyle The Worry-Not Warrior</li>
-                    <li>Fati The Multitasker</li>
-                </ol>
-            </div>
+        <img src="https://images.unsplash.com/photo-1526649661456-89c7ed4d00b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2620&q=80" alt="Cohort">
+        <div class="cohort-content">
+            <div class="cohort-title">First Cohort</div>
+            <ol class="cohort-list">
+                <li>Adham the Barrier Breaker</li>
+                <li>The Driven Thuthu</li>
+                <li>ET1 The Relationship Builder</li>
+                <li>Nzeka The Go-Getter</li>
+                <li>Omphile's Daddy</li>
+                <li>Nabeelah The Collaborator</li>
+                <li>Mikhaila The Memory Maker</li>
+                <li>Niel The Bit Flipper</li>
+                <li>Seb The Data Diva</li>
+                <li>Paul The Optimizer</li>
+                <li>Elrika The Talent Magnet</li>
+                <li>Shaunei The Puma</li>
+                <li>Kyle The Worry-Not Warrior</li>
+                <li>Fati The Multitasker</li>
+            </ol>
         </div>
     </div>
 </body>
 </html>
-
 
 
 

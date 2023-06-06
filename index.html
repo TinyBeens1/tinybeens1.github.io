@@ -4,140 +4,166 @@
     <title>Coding Academy</title>
     <style>
         body {
-            background-color: #f2f2f2;
             margin: 0;
             padding: 0;
-            font-family: Monospace;
+            font-family: Arial, sans-serif;
         }
-        
+
         .menu {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #ffd700;
+            background-color: #d4af37;
             height: 60px;
             font-size: 23px;
             font-weight: bold;
             font-family: Monospace;
-            margin-bottom: 30px;
         }
-        
+
         .menu a {
-            color: black;
-            text-decoration: none;
             margin: 0 30px;
-        }
-        
-        .hero {
-            text-align: center;
-            font-size: 40px;
-            font-weight: bold;
-            font-family: Monospace;
             color: black;
-        }
-        
-        .hero-subtitle {
-            font-size: 60px;
-            font-weight: bold;
-            font-family: Monospace;
-            color: black;
-        }
-        
-        .description {
-            text-align: center;
-            font-size: 14px;
-            font-family: Monospace;
-            color: black;
-        }
-        
-        .enroll-button {
-            display: inline-block;
-            padding: 10px 30px;
-            background-color: black;
-            color: white;
-            font-size: 30px;
-            font-family: Monospace;
             text-decoration: none;
-            border-radius: 10px;
         }
-        
-        .features {
-            display: flex;
-            margin-top: 30px;
-        }
-        
-        .features-image {
-            flex: 1;
-            background-image: url('https://149520306.v2.pressablecdn.com/wp-content/uploads/2019/10/Nigerian-children-to-learn-coding.jpg');
+
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1555421689-491a97ff2040?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
             background-size: cover;
             background-position: center;
-            height: 300px;
+            text-align: center;
+            padding: 100px 0;
         }
-        
-        .features-content {
-            flex: 1;
+
+        .hero h1 {
+            font-size: 40px;
+            font-family: Monospace;
+            color: black;
+        }
+
+        .hero h2 {
+            font-size: 60px;
+            font-family: Monospace;
+            color: black;
+            margin-top: -20px;
+        }
+
+        .description {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .features {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             background-image: url('https://images.unsplash.com/photo-1617802690658-1173a812650d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
             background-size: cover;
             background-position: center;
-            padding: 30px;
-            color: white;
+            padding: 100px 0;
         }
-        
+
+        .features img {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .features-content {
+            margin-left: 50px;
+            text-align: center;
+            color: black;
+        }
+
         .features-title {
             font-size: 20px;
             font-weight: bold;
             font-family: Monospace;
             text-align: center;
             color: black;
-            margin-bottom: 20px;
         }
-        
+
         .features-text {
             font-size: 14px;
             font-family: Monospace;
             color: black;
-            text-align: center;
         }
-        
+
         .cohort {
             display: flex;
-            margin-top: 30px;
-        }
-        
-        .cohort-image {
-            flex: 1;
-            background-image: url('https://media.licdn.com/dms/image/C4D22AQG0no32-jIrLg/feedshare-shrink_2048_1536/0/1679002072948?e=1689206400&v=beta&t=6G2tF-GyGmwqgEOW6FzVwwkT6Bzv8nMFfnBPOtCyik8');
-            background-size: cover;
-            background-position: center;
-            height: 300px;
-        }
-        
-        .cohort-content {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 30px;
+            padding: 100px 0;
+            background-image: url('https://images.unsplash.com/photo-1526649661456-89c7ed4d00b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2620&q=80');
+            background-size: cover;
+            background-position: center;
         }
-        
+
+        .cohort img {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .cohort-content {
+            margin-left: 50px;
+            color: black;
+        }
+
         .cohort-title {
             font-size: 20px;
             font-weight: bold;
             font-family: Monospace;
             text-align: center;
             color: black;
-            margin-bottom: 20px;
         }
-        
-        .cohort-names {
+
+        .cohort-list {
             font-size: 14px;
             font-family: Monospace;
             color: black;
+            list-style-type: decimal;
+        }
+
+        .video {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .video-title {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Monospace;
+            text-align: center;
+            color: black;
+        }
+
+        .video-text {
+            font-size: 14px;
+            font-family: Monospace;
+            color: black;
+        }
+
+        .video-thumb {
+            width: 500px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .cta-button {
+            display: block;
+            margin: 50px auto;
+            width: 200px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 30px;
+            text-align: center;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            font-family: Monospace;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -151,35 +177,33 @@
         <a href="https://eazicode.com/#Testimonials">Testimonials</a>
         <a href="https://eazicode.com/#contact">Contact</a>
     </div>
-    
+
     <div class="hero">
-        <h1>WELCOME<br>TO</h1>
+        <h1>WELCOME TO</h1>
         <h2>PARGO ACADEMY</h2>
+        <div class="description">
+            <p>Learning web development as a team.</p>
+        </div>
+        <a href="https://form.jotform.com/211353850485557" class="cta-button">ENROL TODAY</a>
     </div>
-    
-    <div class="description">
-        <p>Learning web development as a team</p>
-    </div>
-    
-    <div class="enroll-button">
-        <a href="https://form.jotform.com/211353850485557" target="_blank">ENROL TODAY</a>
-    </div>
-    
+
     <div class="features">
-        <div class="features-image"></div>
+        <img src="https://149520306.v2.pressablecdn.com/wp-content/uploads/2019/10/Nigerian-children-to-learn-coding.jpg" alt="Coding Kids">
         <div class="features-content">
-            <h3 class="features-title">Why Learn How To Code?</h3>
+            <div class="features-title">Why Learn How To Code?</div>
             <p class="features-text">Considering the direction that the world is going with developments in technology, we strongly believe that it is critical for people to get exposed to skills that will prepare them for the 4th industrial revolution.</p>
-            <h3 class="features-title">Learn How To Think Differently</h3>
+            <div class="features-title">Learn How To Think Differently</div>
             <p class="features-text">Computer programming doesn't just teach people how to type lines of code. It teaches them how to think differently and solve problems.</p>
+            <div class="features-title">Coding Is The Future</div>
+            <p class="features-text">Coding is a useful skill to have with the way the world is developing.</p>
         </div>
     </div>
-    
+
     <div class="cohort">
-        <div class="cohort-image"></div>
+        <img src="https://media.licdn.com/dms/image/C4D22AQG0no32-jIrLg/feedshare-shrink_2048_1536/0/1679002072948?e=1689206400&v=beta&t=6G2tF-GyGmwqgEOW6FzVwwkT6Bzv8nMFfnBPOtCyik8" alt="First Cohort">
         <div class="cohort-content">
-            <h3 class="cohort-title">First cohort</h3>
-            <ol class="cohort-names">
+            <div class="cohort-title">First Cohort</div>
+            <ul class="cohort-list">
                 <li>Adham the Barrier Breaker</li>
                 <li>The Driven Thuthu</li>
                 <li>ET1 The Relationship Builder</li>
@@ -194,11 +218,19 @@
                 <li>Shaunei The Puma</li>
                 <li>Kyle The Worry-Not Warrior</li>
                 <li>Fati The Multitasker</li>
-            </ol>
+            </ul>
         </div>
+    </div>
+
+    <div class="video">
+        <div class="video-title">HTML Tutorial for Beginners: HTML Crash Course</div>
+        <p class="video-text">HTML Tutorial for Beginners - Learn HTML for a career in web development. This HTML tutorial teaches you everything you need to get started.<br>
+        🔥 Enrol With Pargo Academy Today and Become an HTML and CSS Master! 🔥</p>
+        <a href="https://youtu.be/5WJpSAWtI_4"><img src="https://i.ytimg.com/vi/5WJpSAWtI_4/hqdefault.jpg" alt="HTML Crash Course" class="video-thumb"></a>
     </div>
 </body>
 </html>
+
 
 
 

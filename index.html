@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Pargo Academy</title>
     <style>
         body {
             margin: 0;
@@ -9,35 +10,34 @@
         }
 
         .menu {
-            background-color: #FDD017;
-            height: 60px;
             display: flex;
             justify-content: center;
-            align-items: center;
+            background-color: gold;
+            font-size: 23px;
+            font-weight: bold;
+            font-family: Monospace;
+            margin-bottom: 30px;
+            padding-top: 15px;
         }
 
         .menu a {
-            color: black;
-            font-size: 23px;
-            font-weight: bold;
             text-decoration: none;
+            color: black;
             margin: 0 15px;
-            font-family: Monospace;
         }
 
         .hero {
-            background-image: url('https://images.unsplash.com/photo-1555421689-491a97ff2040?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
-            background-position: center;
+            background-image: url("https://images.unsplash.com/photo-1555421689-491a97ff2040?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
             background-size: cover;
+            background-position: center;
             text-align: center;
-            padding: 100px 0;
+            padding: 150px 0;
             color: black;
         }
 
         .hero h1 {
             font-size: 60px;
             font-weight: bold;
-            margin-bottom: 20px;
             font-family: Monospace;
         }
 
@@ -46,28 +46,31 @@
             font-family: Monospace;
         }
 
-        .description {
+        .hero p {
             font-size: 14px;
-            margin-bottom: 30px;
             font-family: Monospace;
         }
 
         .cta-button {
             display: inline-block;
-            font-size: 30px;
-            background-color: black;
-            color: white;
             padding: 10px 30px;
-            border-radius: 65px;
+            font-size: 30px;
+            font-weight: bold;
             text-decoration: none;
-            font-family: Monospace;
+            color: white;
+            background-color: black;
+            border-radius: 65px;
         }
 
         .features {
             display: flex;
             align-items: center;
+            justify-content: space-around;
             padding: 100px 0;
             color: black;
+            background-image: url("https://images.unsplash.com/photo-1617802690658-1173a812650d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+            background-size: cover;
+            background-position: center;
         }
 
         .features img {
@@ -78,27 +81,21 @@
         .features-content {
             width: 50%;
             padding-left: 50px;
-            color: black;
         }
 
         .features-title {
             font-size: 20px;
             font-weight: bold;
             text-align: center;
-            color: black;
             font-family: Monospace;
         }
 
         .features-text {
             font-size: 14px;
-            color: black;
             font-family: Monospace;
         }
 
         .video {
-            background-image: url('https://images.unsplash.com/photo-1617802690658-1173a812650d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
-            background-position: center;
-            background-size: cover;
             text-align: center;
             padding: 100px 0;
             color: black;
@@ -108,13 +105,11 @@
             font-size: 20px;
             font-weight: bold;
             text-align: center;
-            color: black;
             font-family: Monospace;
         }
 
         .video-text {
             font-size: 14px;
-            color: black;
             font-family: Monospace;
         }
 
@@ -124,6 +119,9 @@
             justify-content: center;
             padding: 100px 0;
             color: black;
+            background-image: url("https://images.unsplash.com/photo-1526649661456-89c7ed4d00b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2620&q=80");
+            background-size: cover;
+            background-position: center;
         }
 
         .cohort img {
@@ -134,20 +132,17 @@
         .cohort-content {
             width: 50%;
             padding-left: 50px;
-            color: black;
         }
 
         .cohort-title {
             font-size: 20px;
             font-weight: bold;
             text-align: center;
-            color: black;
             font-family: Monospace;
         }
 
         .cohort-list {
             font-size: 14px;
-            color: black;
             font-family: Monospace;
         }
     </style>
@@ -167,8 +162,8 @@
         <h1>WELCOME</h1>
         <h2>TO</h2>
         <h1>PARGO ACADEMY</h1>
-        <p class="description">Learning web development as a team.</p>
-        <a class="cta-button" href="https://form.jotform.com/211353850485557">ENROL TODAY</a>
+        <p>Learning web development as a team.</p>
+        <a href="https://form.jotform.com/211353850485557" class="cta-button">ENROL TODAY</a>
     </div>
 
     <div class="features">
@@ -186,14 +181,14 @@
     </div>
 
     <div class="video">
-        <h2 class="video-title">HTML Tutorial for Beginners: HTML Crash Course</h2>
-        <p class="video-text">HTML Tutorial for Beginners - Learn HTML for a career in web development. This HTML tutorial teaches you everything you need to get started.
-🔥 Enrol With Pargo Academy Today and Become an HTML and CSS Master! 🔥</p>
-        <iframe width="860" height="615" src="https://youtu.be/qz0aGYrrlhU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="video-title">HTML Tutorial for Beginners: HTML Crash Course</div>
+        <p class="video-text">HTML Tutorial for Beginners - Learn HTML for a career in web development. This HTML tutorial teaches you everything you need to get started.<br>
+        🔥 Enrol With Pargo Academy Today and Become an HTML and CSS Master! 🔥</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div class="cohort">
-        <img src="https://images.unsplash.com/photo-1526649661456-89c7ed4d00b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2620&q=80" alt="Cohort">
+        <img src="https://media.licdn.com/dms/image/C4D22AQG0no32-jIrLg/feedshare-shrink_2048_1536/0/1679002072948?e=1689206400&v=beta&t=6G2tF-GyGmwqgEOW6FzVwwkT6Bzv8nMFfnBPOtCyik8" alt="First Cohort">
         <div class="cohort-content">
             <div class="cohort-title">First Cohort</div>
             <ol class="cohort-list">
@@ -214,8 +209,13 @@
             </ol>
         </div>
     </div>
+
+    <script>
+        // Add any JavaScript code here if needed
+    </script>
 </body>
 </html>
+
 
 
 
